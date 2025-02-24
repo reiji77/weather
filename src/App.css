@@ -3,13 +3,61 @@
 }
 
 .App-header {
-  background-color: palevioletred;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
   font-size: calc(10px + 2vmin);
   color: pink;
 }
+
+.headertext {
+  margin-bottom: 5px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.weather-info {
+  font-size: small;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.loc-button {
+  background-color: pink;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.girl-image {
+  width: 320px;
+  height: 240px;
+  margin-top: 10px;
+  border-radius: 20%;
+}
+
 
